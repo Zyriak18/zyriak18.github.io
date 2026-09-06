@@ -12,11 +12,7 @@ const ProfileSection = () => {
         </div>
       </div>
       <Img
-        src="/img/zyriak-profile-photo-400x400.jpg"
-        srcSet="
-          /img/zyriak-profile-photo-400x400.jpg 500w,
-          /img/zyriak-profile-photo-200x200.jpg 200w
-        "
+        src="/img/zyriak-profile-photo.png"
         alt="zyriak photo"
         className="profile__profile-picture"
         glossy
@@ -24,9 +20,21 @@ const ProfileSection = () => {
 
       <article className="profile__content" aria-label="About Zyriak">
         <BrandLogotype />
-        <p className="profile__description" aria-label="Zyriak's description">
-          <i>Just vibing...</i>
-        </p>
+        <div className="profile__description-section">
+          <p className="profile__description" aria-label="Zyriak's description">
+            📍 I live in: <strong>Sesame Street</strong> <br />
+            🎲 Variety of edits
+            <br />
+            <span className="profile__after-effects-description">
+              <img
+                src="/img/ae-icon.png"
+                className="profile__icon"
+                alt="After Effects glossy icon"
+              />{" "}
+              CC 2024
+            </span>
+          </p>
+        </div>
       </article>
     </div>
   );

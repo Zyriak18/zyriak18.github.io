@@ -100,8 +100,7 @@
     font-family: "Switzer-Variable";
     color: white;
   }
-  p,
-  span {
+  p {
     @mixin text-shadow;
   }
 }
